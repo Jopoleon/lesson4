@@ -136,10 +136,10 @@ func structsComparison() {
 		Name    string
 		Friends []string // слайсы не сравниваемы
 	}
-	pe1 := PersonNonComparable{"foo", []string{"bar"}}
-	pe2 := PersonNonComparable{"foo", []string{"bar"}}
+	// pe1 := PersonNonComparable{"foo", []string{"bar"}}
+	// pe2 := PersonNonComparable{"foo", []string{"bar"}}
 	// person1 == person2 будет ошибкой компиляции
-	fmt.Println(pe1 == pe2) // ошибкой компиляции
+	// fmt.Println(pe1 == pe2) // ошибкой компиляции
 
 }
 

@@ -29,19 +29,19 @@ func slices() {
 	fmt.Println("Original Slice:", originalSlice) // [1, 99, 3, 4, 5]
 	fmt.Println("New Slice:", newSlice)           // [99, 3, 4]
 
-	var s []int // s == nil
+	// var s []int // s == nil
 
-	big := make([]int, 1000000)
-	small := big[:3] // память под big не будет освобождена до тех пор, пока small в использовании
+	// big := make([]int, 1000000)
+	// small := big[:3] // память под big не будет освобождена до тех пор, пока small в использовании
 
-	a := []int{1, 2, 3}
-	b := append(a, 4)
-	a[0] = 42
+	// a := []int{1, 2, 3}
+	// b := append(a, 4)
+	// a[0] = 42
 	// b все еще [1, 2, 3, 4], не видит изменений a
 
-	a := []int{1, 2, 3}
-	b := []int{4, 5}
-	copy(a, b)
+	// a := []int{1, 2, 3}
+	// b := []int{4, 5}
+	// copy(a, b)
 	// a теперь [4, 5, 3]
 
 	// Use make to create an empty slice of integers.
@@ -63,8 +63,8 @@ func slices() {
 	fmt.Println(cap(slice)) // Print  5
 	/* Create a new slice.Contains a length
 	   of 2 and capacity of 4 elements.*/
-	newSlice := slice[1:3]
-	fmt.Println(slice)         //Print [10 20 30 40 50]
-	fmt.Println(len(newSlice)) //Print 2
-	fmt.Println(cap(newSlice)) //Print 4
+	// newSlice := slice[1:3]
+	fmt.Println(slice) //Print [10 20 30 40 50]
+	// fmt.Println(len(newSlice)) //Print 2
+	// fmt.Println(cap(newSlice)) //Print 4
 }
